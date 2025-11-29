@@ -1,18 +1,85 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="UTF-8">
-		<title>Awesome Animation Tools</title>
-	</head>
-	<body>
-		<a href="https://www.pencil2d.org/doc/tutorials.html">Pencil2D</a>
-		<a href="https://morevnaproject.org/opentoonz/">OpenToonz</a>
-		<a href="https://animeeffectsdevs.github.io/">Anime Effects</a>
-		<a href="https://www.kdan.com/animation-desk">Animation Desk</a>
-		<a href="https://animationpaper.com/">Animation Paper</a>
-		<a href="https://tahoma2d.org/index.html#compare">Tahoma 2D</a>
-		<a href="https://www.synfig.org/">Synfig</a>
-		<a href="https://opentoonz.github.io/e/">OpenToonz</a>
-		<a href="https://friction.graphics/">Friction</a>
-	</body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Awesome Animation Tools</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #1a1c1f;
+      color: #ffffff;
+      display: flex;
+      justify-content: center;
+      padding: 40px 20px;
+    }
+
+    .container {
+      max-width: 800px;
+      width: 100%;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 30px;
+      color: #ffdd7e;
+    }
+
+    .tool-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .tool-item {
+      background: #ffffff10;
+      backdrop-filter: blur(6px);
+      border-radius: 16px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+      transition: transform 0.2s ease, background 0.2s ease;
+    }
+
+    .tool-item:hover {
+      transform: translateY(-5px);
+      background: #ffffff20;
+    }
+
+    .tool-item a {
+      text-decoration: none;
+      color: #ffdd7e;
+      font-size: 1.2rem;
+      font-weight: bold;
+      display: block;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2rem;
+      }
+      .tool-item {
+        padding: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Awesome Animation Tools</h1>
+    <div class="tool-list">
+      <div class="tool-item"><a href="https://www.pencil2d.org/doc/tutorials.html">Pencil2D</a></div>
+      <div class="tool-item"><a href="https://morevnaproject.org/opentoonz/">OpenToonz</a></div>
+      <div class="tool-item"><a href="https://animeeffectsdevs.github.io/">Anime Effects</a></div>
+      <div class="tool-item"><a href="https://www.kdan.com/animation-desk">Animation Desk</a></div>
+      <div class="tool-item"><a href="https://animationpaper.com/">Animation Paper</a></div>
+      <div class="tool-item"><a href="https://tahoma2d.org/index.html#compare">Tahoma 2D</a></div>
+      <div class="tool-item"><a href="https://www.synfig.org/">Synfig</a></div>
+      <div class="tool-item"><a href="https://opentoonz.github.io/e/">OpenToonz (Alt)</a></div>
+      <div class="tool-item"><a href="https://friction.graphics/">Friction</a></div>
+    </div>
+  </div>
+</body>
 </html>
